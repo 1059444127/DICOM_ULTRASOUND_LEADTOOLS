@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="gdiplus">
+      <UniqueIdentifier>{c4cb84e5-ac95-4917-b5d5-92e010ab0def}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="gdiplus\license.txt">
+      <Filter>gdiplus</Filter>
+    </Text>
+    <Text Include="gdiplus\redist.txt">
+      <Filter>gdiplus</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DICOM.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DICOMDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DicomCreat.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DICOMSend.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlus.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusBase.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusBitmap.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusBrush.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusCachedBitmap.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusColor.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusColorMatrix.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusEnums.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusFlat.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusFont.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusFontCollection.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusFontFamily.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusGpStubs.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusGraphics.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusHeaders.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusimageAttributes.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusImageCodec.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusImaging.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusInit.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusLineCaps.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusMatrix.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusMem.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusMetaFile.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusMetaHeader.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusPath.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusPen.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusPixelFormats.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusRegion.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusStringFormat.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\GdiPlusTypes.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplus\myGdiPlus.h">
+      <Filter>gdiplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DICOM.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DICOMDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DicomCreat.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DICOMSend.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DICOM.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\DICOM.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="gdiplus\gdiplus.dsp">
+      <Filter>gdiplus</Filter>
+    </None>
+    <None Include="gdiplus\gdiplus.vcxproj.filters">
+      <Filter>gdiplus</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\DICOM.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

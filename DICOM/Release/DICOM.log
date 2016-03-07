@@ -1,0 +1,16 @@
+﻿빌드 시작: 2015-12-21 오전 8:18:59
+     1>2 노드의 "D:\METABIOMED\1_System\Ultrasound_MS09\2.SW\DICOM_PROCESSOR\0.DICOM_VER0\3. DICOM - CreatDICOM IN CLUDE LEADTOOLS - 복사본\DICOM\DICOM.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\DICOM.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\DICOM.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cFindFolder.cpp DICOM.cpp DicomCreat.cpp DICOMDlg.cpp
+         cFindFolder.cpp
+         DICOM.cpp
+         DicomCreat.cpp
+     1>DicomCreat.cpp(9): fatal error C1083: 포함 파일을 열 수 없습니다. 'L_Bitmap.h': No such file or directory
+         DICOMDlg.cpp
+     1>"D:\METABIOMED\1_System\Ultrasound_MS09\2.SW\DICOM_PROCESSOR\0.DICOM_VER0\3. DICOM - CreatDICOM IN CLUDE LEADTOOLS - 복사본\DICOM\DICOM.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:03.16
