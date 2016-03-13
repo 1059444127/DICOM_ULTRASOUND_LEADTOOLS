@@ -52,11 +52,11 @@ bool DICOMSend::StartSending(CString Filepath)
 	{
 		if (ret == 1)
 		{
-			AfxMessageBox(_T("Leadtools 지원팀 연락"));
+			//AfxMessageBox(_T("Leadtools 지원팀 연락"));
 		}
 		else
 		{
-			AfxMessageBox(_T("연결에 실패 하였습니다.(StartUp)"));
+			AfxMessageBox(_T("Connect Fail.(StartUp)"));
 		}
 	}
 
@@ -71,11 +71,11 @@ bool DICOMSend::StartSending(CString Filepath)
 	{
 		if (ret == 1)
 		{
-			AfxMessageBox(_T("Leadtools 지원팀 연락"));
+			//AfxMessageBox(_T("Leadtools 지원팀 연락"));
 		}
 		else
 		{
-			AfxMessageBox(_T("연결에 실패 하였습니다.(CONNECT)"));
+			AfxMessageBox(_T("Connect Fail.(CONNECT)"));
 		}
 	}
 	//LDICOMNET:OnConnect
@@ -349,8 +349,8 @@ L_VOID DICOMSend::BuildAssociation()
 	}
 	else
 	{
-		AfxMessageBox(_T("성공적으로 보냈습니다."));
-
+		Sleep(1000); // 전송되는 시간을 임의로 지정.
+		AfxMessageBox(_T("Transfer completed."));
 		CloseConnection();
 
 
