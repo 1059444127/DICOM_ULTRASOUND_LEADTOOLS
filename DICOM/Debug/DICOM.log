@@ -1,8 +1,7 @@
-﻿빌드 시작: 2016-03-07 오후 4:31:14
+﻿빌드 시작: 2016-03-13 오후 5:08:43
      1>2 노드의 "D:\METABIOMED\1_System\Ultrasound_MS09\2.SW\DICOM\dicom_v1.0.1\DICOM\DICOM.vcxproj" 프로젝트(Build 대상)입니다.
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\METABIOMED\1_System\Ultrasound_MS09\2.SW\DICOM_PROCESSOR\1.추가 변경\2. TreeControl\DICOM\gdiplus" /I"C:\LEADTOOLS 19\Include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D LTV19_CONFIG /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\DICOM_D.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DicomCreat.cpp
-         DicomCreat.cpp
+     1>ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\rc.exe /D _DEBUG /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0412" /IDebug\ /nologo /fo"Debug\DICOM.res" DICOM.rc 
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\METABIOMED\1_System\Ultrasound_MS09\2.SW\DICOM\dicom_v1.0.1\Debug\DICOM_D.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\LEADTOOLS 19\Lib\CDLLVC12\Win32" Ltfil_u.lib Ltann_u.lib ltkrn_u.lib ltdic_u.lib Ltdic_a.lib wsock32.lib PathDir.lib TreeCreate.lib GdiPlus.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\METABIOMED\1_System\Ultrasound_MS09\2.SW\DICOM\dicom_v1.0.1\Debug\DICOM_D.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\METABIOMED\1_System\Ultrasound_MS09\2.SW\DICOM\dicom_v1.0.1\Debug\DICOM_D.lib" /MACHINE:X86 Debug\DICOM.res
          Debug\DICOM.obj
@@ -15,4 +14,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:00.65
+경과 시간: 00:00:00.63
