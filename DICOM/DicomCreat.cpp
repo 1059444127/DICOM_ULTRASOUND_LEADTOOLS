@@ -83,9 +83,9 @@ BOOL DicomCreat::OnInitDialog()
 	CDialog::OnInitDialog();
 
 	// TODO:  여기에 추가 초기화 작업을 추가합니다.
-	//L_DicomStartUp(); // 꼭 필요하다.
-	L_INT nRet = L_SetLicenseFile(_T("D:\\METABIOMED\\1_System\\Ultrasound_MS09\\dicom_meta\\meta.lic"),
-		_T("3Mx+XodTlJbjbUvDFtFmk/mRWcBZLi0IkN2k3qZptzOWoLXYPWOU1xiYtXqhCnFE"));
+	L_DicomStartUp(); // 꼭 필요하다.
+	/*L_INT nRet = L_SetLicenseFile(_T("D:\\METABIOMED\\1_System\\Ultrasound_MS09\\dicom_meta\\meta.lic"),
+		_T("3Mx+XodTlJbjbUvDFtFmk/mRWcBZLi0IkN2k3qZptzOWoLXYPWOU1xiYtXqhCnFE"));*/
 	m_cSEX.InsertString(0, _T("Male"));
 	m_cSEX.InsertString(1, _T("Female"));
 	SetBitmap();
@@ -570,7 +570,6 @@ void DicomCreat::OnBnClickedButtonInput()
 		GetDlgItem(IDC_EDIT3)->EnableWindow(FALSE);
 		GetDlgItem(IDC_COMBO1)->EnableWindow(FALSE);
 
-
 	}
 }
 
@@ -660,7 +659,7 @@ void DicomCreat::OnBnClickedButtonPchange()
 bool DicomCreat::PACSInfo()
 {
 	int flag = 0;
-	sDCMSendInfo = _T("C:\\PACS information.dat");
+	sDCMSendInfo = _T("D:\\PACS information.dat");
 
 	if (!DCMSendFile.Open(sDCMSendInfo, CFile::modeReadWrite))
 	{
@@ -679,6 +678,7 @@ bool DicomCreat::PACSInfo()
 
 		CString strn;
 		DCMSendFile.ReadString(strn);
+		DCMSendFile.Close(); // 파일을 불러 왔으면 닫아 줘야 함. 메모리에 남으면 안됨!
 
 		int num2 = strn.Find(_T("_2_"));
 		int num3 = strn.Find(_T("_3_"));
@@ -700,7 +700,6 @@ bool DicomCreat::PACSInfo()
 		GetDlgItem(IDC_EDIT7)->EnableWindow(FALSE);
 		GetDlgItem(IDC_BUTTON_DCMSAVE)->EnableWindow(FALSE);
 
-		DCMSendFile.Close(); // 파일을 불러 왔으면 닫아 줘야 함. 메모리에 남으면 안됨!
 
 		
 		break;
@@ -711,10 +710,10 @@ bool DicomCreat::PACSInfo()
 void DicomCreat::OnBnClickedButtonDcmsave()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	DCMSendFile.Open(sDCMSendInfo, CFile::modeReadWrite | CFile::modeCreate);
-
 	UpdateData(TRUE);
 
+	DCMSendFile.Open(sDCMSendInfo, CFile::modeReadWrite | CFile::modeCreate);
+	AfxMessageBox(sDCMSendInfo);
 
 	CString sSeverip, sSeverport, sSverAE, sUserAE;
 	m_SeverIP.GetWindowText(sSeverip);

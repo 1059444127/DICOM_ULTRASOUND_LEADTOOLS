@@ -212,6 +212,7 @@ void CDICOMDlg::TreeDClk(NMHDR *pNMHDR, LRESULT *pResult)
 /*cFindFolder 첫 실행 지점*/
 bool CDICOMDlg::FindFolder()
 {
+	//CString path = _T("D:\\SCUS\\SYSDATA\\SystemSet.xml"); // 노트북
 	CString path = _T("D:\\METABIOMED\\1_System\\Ultrasound_MS09\\SCUS\\SYSDATA\\SystemSet.xml");
 	//CString path = _T("C:\\Program Files\\SCUS\\SYSDATA\\SystemSet.xml"); // MS09
 
